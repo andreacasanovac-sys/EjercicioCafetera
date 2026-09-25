@@ -12,7 +12,7 @@ public class Cambio{
 	}
 	
 	public int calcularBilletes(int dineroRecibido, Cafetera pagoTotal){
-		int pagoTotal.obtenTotal();
+		int tot = pagoTotal.obtenPrecioCafeNegro();
 		if(dineroRecibido >= 50){
 		
 		}
