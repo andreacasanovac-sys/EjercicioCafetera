@@ -61,27 +61,27 @@ son 18g xd) entonces debe mandar un mensaje de error que inidique que la bebida 
 		leche = inventarioL;
 	}
 	
-	public void hacerCafNeg(int udsAzucar){     //Suponiendo que una porción de azúcar = 5grs.
+	public String hacerCafNeg(int udsAzucar){     //Suponiendo que una porción de azúcar = 5grs.
 		if(cafeNegro < 18 || azucar < (udsAzucar*5)){
 			System.err.println("Error: Producto agotado.");
 			return;
 		}
 		cafeNegro -=18;
 		azucar -= (udsAzucar*5);
-		System.out.println("Producto realizado exitosamente");
+		return "Producto realizado exitosamente";
 	}
 	
-	public void hacerCafDecaf(int udsAzucar){
+	public String hacerCafDecaf(int udsAzucar){
 		if(cafeDecaf < 18 || azucar < (udsAzucar*5)){
 			System.err.println("Error: Producto agotado.");
 			return;
 		}
 		cafeDecaf -= 18;
 		azucar -= (udsAzucar*5);
-		System.out.println("Producto realizado exitosamente");
+		return "Producto realizado exitosamente";
 	}
 	
-	public void hacerCapuccino(int udsAzucar){
+	public String hacerCapuccino(int udsAzucar){
 		if(capuccino < 18 || leche < 60 || azucar < (udsAzucar*5)){
 			System.err.println("Error: Producto agotado.");
 			return;
@@ -90,11 +90,9 @@ son 18g xd) entonces debe mandar un mensaje de error que inidique que la bebida 
 		leche -= 60;
 		capuccino -= 18;
 		azucar -= (udsAzucar*5);
-		System.out.println("Producto realizado exitosamente");
+		return "Producto realizado exitosamente";
 	}
 	
-	public
-
 	public static int obtenTotalCafeNegro(){	
 		return cafeNegro;
 	}
