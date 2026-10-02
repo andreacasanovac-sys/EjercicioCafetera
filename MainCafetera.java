@@ -26,7 +26,7 @@ public class MainCafetera{
 	System.out.println(inventario.obtenTotalCapuccino());
 	
 	Cafetera pedido1 = new Cafetera(3, 2);
-	pedido1.hacerCapuccino();
+	pedido1.hacerCapuccino(); //Hay que correcgir esto.
 	System.out.println(inventario.obtenTotalLeche());
 	System.out.println(inventario.obtenTotalAzucar());
 	System.out.println(inventario.obtenTotalCapuccino());
